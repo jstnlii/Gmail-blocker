@@ -1,12 +1,15 @@
 // only deletes archived threads with label
 
-function DeleteArchivedEmailsWithLabel() {
-    var threads = SearchArchivedEmailsWithLabel('BLOCKEDSENDER');
-  
-    if (threads != null) {
-      for (var i = 0; i < threads.length; i++) {
+function deleteArchivedWithLabel() {
+  var threads = GmailApp.search("label:BLOCKEDSENDER in:all");
+
+  if (threads != null) {
+    for (var i = 0; i < threads.length; i++) {
+      var labels = threads[i].getLabels();
+
+      if (hasLabel(labels, "BLOCKEDSENDER")) {
         var messages = threads[i].getMessages();
-  
+
         if (messages != null) {
           for (var j = 0; j < messages.length; j++) {
             Gmail.Users.Messages.remove('me', messages[j].getId());
@@ -15,9 +18,13 @@ function DeleteArchivedEmailsWithLabel() {
       }
     }
   }
-  
-  function SearchArchivedEmailsWithLabel(labelName) {
-    var query = 'in:all -in:inbox label:' + labelName;
-  
-    return GmailApp.search(query);
+}
+
+function hasLabel(labels, labelName) {
+  for (var k = 0; k < labels.length; k++) {
+    if (labels[k].getName() === labelName) {
+      return true;
+    }
   }
+  return false;
+}
