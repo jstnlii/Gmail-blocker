@@ -1,7 +1,7 @@
 // only deletes emails found in inbox with label
 
 function DeleteEmailByLabel(e) {
-  var bannedLabel = 'BLOCKEDSENDER';
+  var bannedLabel = "BLOCKEDSENDER";
   var deleteLabel = GmailApp.getUserLabelByName(bannedLabel);
 
   if (deleteLabel != null) {
@@ -13,7 +13,7 @@ function DeleteEmailByLabel(e) {
 
         if (messages != null) {
           for (var j = 0; j < messages.length; j++) {
-            Gmail.Users.Messages.remove('me', messages[j].getId());
+            Gmail.Users.Messages.remove("me", messages[j].getId());
           }
         }
       }
