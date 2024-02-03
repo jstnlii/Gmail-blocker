@@ -27,7 +27,11 @@ This is a simple script designed to search and delete emails with a specific lab
    - Check the logs to ensure that the script is working as expected.
 
 8. **Automate with Triggers:**
-   - Any email from the address will be automatically and periodically deleted without you ever seeing it. Ignorance is bliss.
+   - Any email from the address will be automatically and periodically deleted without you ever seeing it.
+   
+
+### Ignorance is bliss.
+
 
 ## Usage
 
@@ -38,7 +42,3 @@ This is a simple script designed to search and delete emails with a specific lab
 
 - Handle the script with caution, since it is dealing with permanent deletions.
 - Use this script at your own risk. Double-check the configuration and ensure it meets your requirements before deploying.
-
-## Contribution
-
-Feel free to contribute to the improvement of this script by submitting pull requests or reporting issues.
