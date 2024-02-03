@@ -5,10 +5,10 @@
 // Triggers > + Add Trigger (bottom right) > Time-driven > your choice > Save
 
 function deleteWithLabel() {
-  
-  var bannedLabel = "BLOCKEDSENDER";
 
-  var threads = GmailApp.search("label:" + bannedLabel + " in:all");
+  var bannedLabel = "BLOCKEDSENDER"
+
+  var threads = GmailApp.search("label:" + bannedLabel +  " in:all");
 
   if (threads != null) {
     for (var i = 0; i < threads.length; i++) {
@@ -25,7 +25,7 @@ function deleteWithLabel() {
       }
     }
   }
-  console.log(messages.length + " emails(s) deleted");
+  console.log(threads.length + " emails(s) deleted")
 }
 
 function hasLabel(labels, labelName) {
