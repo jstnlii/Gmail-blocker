@@ -5,10 +5,10 @@ This is a simple script designed to search and delete emails with a specific lab
 ## Setup Instructions
 
 1. **Create a Filter:**
-   - In (https://gmail.com/), set up a filter called `BLOCKEDSENDER` to automatically label emails from the address you want to block. You can change this label name to anything, but that's the default. You can then make the filter automatically send emails from that address to trash, or archive. This way, you do not receive any notifications for these unwanted emails.
+   - In your [Gmail](https://gmail.com/), set up a filter called `BLOCKEDSENDER` to automatically label emails from the address you want to block. You can change this label name to anything, but that's the default. You can then make the filter automatically send emails from that address to trash, or archive. This way, you do not receive any notifications for these unwanted emails.
 
 2. **Paste script:**
-   - Create a new project in Google Apps Script (https://script.google.com/)
+   - Create a new project in [Google Apps Script](https://script.google.com/)
    - Copy and paste the provided code into the script editor.
 
 2. **Enable Gmail API:**
