@@ -18,7 +18,7 @@ function deleteWithLabel() {
         var messages = threads[i].getMessages();
 
         if (messages != null) {
-          for (var j = 0; j < messages.length; j++) {
+          for (var j = 0; j < messages.length; j++) { // sdf
             Gmail.Users.Messages.remove("me", messages[j].getId());
           }
         }
