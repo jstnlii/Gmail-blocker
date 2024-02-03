@@ -11,23 +11,21 @@ This is a simple script designed to search and delete emails with a specific lab
    - Create a new project in [Google Apps Script](https://script.google.com/)
    - Copy and paste the provided code into the script editor.
 
-2. **Enable Gmail API:**
-   - Go to `Services` > `Gmail API` and click `Add`.
+3. **Configure Label:**
+   - Set the `bannedLabel` variable to the name of the label you created in your Gmail. If you didn't change the name of the label in Gmail, you can skip this step.
 
-3. **Set up Triggers:**
-   - Navigate to `Triggers` and add a new time-driven trigger based on your preferences. Recommended every hour and to immediately notify failiures.
+4. **Enable Gmail API:**
+   - On the left side of the screen, `Services` > `Gmail API` and click `Add`.
 
-5. **Configure Label:**
-   - Set the `bannedLabel` variable to the label name used for filtering unwanted emails. If you didn't change the name of the label in Gmail, you can skip this step.
+5. **Set up Triggers:**
+   - Navigate to `Triggers` and add a new time-driven trigger based on your preferences.
+   - Ensure the `choose which function to run` dropdown is set to `deleteWithLabel`.
 
 6. **Save and Run:**
    - Save the script (Ctrl + S) and run the `deleteWithLabel` function manually for the first time.
 
 7. **Verify Execution:**
    - Check the logs to ensure that the script is working as expected.
-
-8. **Automate with Triggers:**
-   - Any email from the address will be automatically and periodically deleted without you ever seeing it.
    
 
 ### Ignorance is bliss.
