@@ -1,6 +1,6 @@
 # Gmail - Email Blocker
 
-This is a simple script designed to search and delete emails with a specific label from anywhere in your Gmail inbox. Its main purpose is to manage unwanted emails and to *actually* block addresses since Gmail surprisingly doesn't offer this. Gmail's blocking system only sends the emails to trash and does not stop them.
+This is a simple JS script using Gmail's API designed to search and delete emails with a specific label from anywhere in your Gmail inbox. Its main purpose is to completely stop unwanted emails and to *actually* block addresses since Gmail surprisingly doesn't offer this. Gmail's blocking system only sends the emails to trash and does not stop them 100%.
 
 ## Setup Instructions
 
@@ -28,7 +28,7 @@ This is a simple script designed to search and delete emails with a specific lab
    - Check the logs to ensure that the script is working as expected.
    
 
-### Ignorance is bliss.
+### ignorance is bliss lol
 
 
 ## Usage
@@ -38,5 +38,4 @@ This is a simple script designed to search and delete emails with a specific lab
 
 ## Disclaimer
 
-- Handle the script with caution, since it is dealing with permanent deletions.
-- Use this script at your own risk. Double-check the configuration and ensure it meets your requirements before deploying.
+- Edit the script with caution, as it is dealing with permanent deletions.
